@@ -7,7 +7,7 @@ class Utils {
   
   public static double roundToX (double number, int x) {
     double rounded;
-    // If the second parameter is negative or zero, just returns the number
+    // If the second parameter is negative, just returns the number
     if (x<0) {
       return number;
     }
