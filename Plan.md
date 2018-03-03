@@ -16,6 +16,8 @@
 
 ### Methods for the program
 * Rounding to n number of decimal places
+* Random number generator (start and end fields)
+* Varible type converter (ex: String to int...etc)
 * ...
 
 ---
