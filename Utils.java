@@ -1,7 +1,9 @@
 /* A Utilities class designed and created by Bracket Bois (Eren, Denzel and Nabeel)
- * March 3rd 2018
+ * March 4rd 2018
  * Build Version 1.0
  */
+
+import java.util.Random;
 
 class Utils {
   
@@ -16,5 +18,18 @@ class Utils {
     rounded /= Math.pow(10, x); // Divides the number by the intial 10^x it was multiplied by before
     return rounded; // returns the rounded number
   }
-
+  
+  public static int randInt (int num1, int num2) {
+    Random r = new Random();
+    int random;
+    
+    // The first number is greather than the second
+    if (num1 >= num2) { 
+      random = r.nextInt((num1-num2) + 1) + num2;
+    } else { // The second number is greater than the first
+      random = r.nextInt((num2-num1) + 1) + num1;
+    }
+    return random; // Returns the generated number
+  }
+  
 }
