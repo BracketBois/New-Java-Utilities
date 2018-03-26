@@ -32,4 +32,20 @@ class Utils {
     return random; // Returns the generated number
   }
   
+    public static void quadForm (int a, int b, int c) {
+    
+    double num1 =  (-b + Math.sqrt(Math.pow(b, 2) - 4 * a * c)) / (2 * a); 
+    double num2 =  (-b - Math.sqrt(Math.pow(b, 2) - 4 * a * c)) / (2 * a); 
+    
+    if (Double.isNaN(num1) && Double.isNaN(num2)) { // Both values are imaginary 
+      System.out.println("Both results are imaginary numbers.");
+    } else if (Double.isNaN(num1)) { // Num1 is imaginary 
+      System.out.println("Result 1: Imaginary Number Result 2: " + num2); 
+    } else if (Double.isNaN(num2)) { // Num2 is imaginary 
+      System.out.println("Result 1: " + num1 + " Result 2: Imaginary Number");
+    } else {
+      System.out.println("Result 1: " + num1 + " Result 2: " + num2);
+    }
+  }
+  
 }
